@@ -1,92 +1,148 @@
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devic-width,initial-scale=1.0">
-    <meta name="keywords" content="随便写的,这是搜索关键字">
-    <meta name="description" content="基茨">
-<!--    <meta http-equiv="refresh" content="8; https://bilibili.com">-->
-    <title>第一个程序</title>
-    <link rel="stylesheet" type="text/css" href="hellostyle.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width:512px) and (max-width:1024px)" href="hellostylescreen.css">
-    <link rel="icon" href="tubiao.png" type="image/x-icon">
-    <base target="_blank">
+    <title>一个网站</title>
+    <style type="text/css">
+        body{
+            background-image:url("109800329_p0.jpg");
+            background-size: 100%;
+            margin: 10px;
+        }
+        .page{
+            width: 1220px;
+            margin: 0 auto;
+        }
+        .col{
+            column-count: 3;
+            column-gap: 10px;
+            column-fill: balance;
+        }
+        .content > img{
+            width: 360px;
+            text-align: center;
+            transition: 1.5s;
+            filter: opacity(0.9);
+        }
+        .content:hover{
+            background-color: rgb(15,255,255,70%);
+        }
+        a img{
+            width: 20px;
+            height: 20px;
+        }
+        .content{
+            background-color:rgb(255,255,255,75%);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            -webkit-column-break-inside: avoid;
+            transition-duration: 1.5s;
+        }
+        .content p{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        a{
+            text-decoration-line: none;
+            color: black;
+            transition-duration: 1s;
+        }
+        a:hover{
+            text-decoration-line: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
-    <a href="https://baidu.com">学习中遇到不会的,自己百度哦~</a>
-    <script type="text/javascript" >
-        document.write("这是由script脚本输出de~")
-    </script>
-    <p>seiun sky~</p>
-    <ruby>喵<rp>(</rp><rt>nya</rt><rp>)</rp></ruby>
-    <pre>
-    <code>
-           public class Hello{
-                public static void main(String args[]){
-                    System.out.println("Hello World~");
-                }
-            }
-    </code>
-    </pre>
-    <p><abbr title="基茨">kitsu</abbr>哈哈哈哈哈</p>
-    <p><dfn>原神</dfn>是一款由上海米哈游公司开发的......</p>
-    <p><mark>hanime1.com</mark></p>
-    <span>Mg + ZnSO<sub>4</sub> = MgSO<sub>4</sub> + Zn </span><mark><small>你的美偷走了我的心</small></mark>
-    <address>
-        <strong>联系我们</strong><br>
-        QQ:2624099451<br>
-        邮箱:<a href="https://ys.mihoyo.com/">2624099451@qq.com</a><br>
-    </address>
-    <ul>
-        <li>お風呂にする？</li>
-        <li>ご飯にする</li>
-        <li>それとも……わ?た?し？</li>
-    </ul>
-    <caption>7月新番开播时间表</caption>
-    <table>
-        <tr>
-            <th>名字</th>
-            <th>开播时间</th>
-        </tr>
-        <tr>
-            <td>勇者赫鲁库</td>
-            <td>7月11日</td>
-        </tr>
-        <tr>
-            <td>无职转生 第2期</td>
-            <td>7月2日</td>
-        </tr>
-    </table>
-    <form method="post" enctype="multipart/form-data">
-        <label>账号:<input type="text" value="kitsu" autocomplete="on"></label><br><br>
-        <label>密码:<input type="password" autofocus required></label><br><br>
-        你是不是变态:<input type="text" value="是" readonly><br><br>
-        <label>你是伪娘吗:
-            <select name="is0">
-                <option value="yes">是!</option>
-                <option value="yes">就是!</option>
-            </select>
-        </label><br><br>
-        <label>其实我不喜欢伪娘来着
-            <input type="checkbox" name="know" value="ok">好好好
-            <input type="checkbox" name="know" value="Ikonw">知道了知道了
-            <input type="checkbox" name="know" value="yes">啊对对对
-        </label><br><br>
-        <label>请选择你要上传的文件:<input type="file" name="file" accept="image/*" multiple></label><br><br>
-        <lable>
-            你有多大<input type="number" name="length" min="0" max="12" step="1" style="width: 120px;" placeholder="随便输2厘米得了">
-            <input type="submit" value="测试">
-        </lable><br><br>
-<!--        <button type="reset">重新输入</button>-->
-        <input type="reset" onclick="prpr()" value="确认"><br><br>
-    </form>
-    <script>
-        function prpr() {
-            alert("变态伪娘prpr~")
-        }
-    </script>
-    <img src ="104168791_p0.jpg" alt="LOGO" width="256px" height="256px"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <iframe src="https://www.ichujin.com/" width="1500px" height="800px">换个浏览器试试~</iframe>
+    <div class="page">
+        <div class="col">
+            <div class="content">
+                <img src="js100.jpg" alt="僵尸百分百">
+                <p>僵尸百分百</p>
+                <a href="https://www.mengfan.tv/m-anime/iA666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+                <a href="https://gxdm01.org/bangumi/887.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>
+                <a href="https://bangumi.online/watch/LBVG8V0WGdsEgYqZ2" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="bssnsrxj.jpg" alt="不死少女杀人笑剧">
+                <p>不死少女杀人笑剧</p>
+                <a href="https://www.mengfan.tv/m-anime/kA666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+                <a href="https://gxdm01.org/bangumi/889.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>
+                <a href="https://bangumi.online/watch/qbwO8zjpQpsMq0dYb" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="bsnyhms.jpg" alt="白圣女与黒牧师">
+                <p>白圣女与黒牧师</p>
+                <a href="https://www.mengfan.tv/m-anime/qA666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+                <a href="https://gxdm01.org/bangumi/888.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>
+                <a href="https://bangumi.online/watch/dpE1koZ95YfWyO5Xd" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="hajh.jpg" alt="黑暗集会">
+                <p>黑暗集会</p>
+                <a href="https://www.mengfan.tv/m-anime/SA666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+<!--                <a href="https://gxdm01.org/bangumi/889.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>-->
+                <a href="https://bangumi.online/watch/prJyJvxBOrTW2JgPM" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="ngdmjtyyy.jpg" alt="能干的猫今天也忧郁">
+                <p>能干的猫今天也忧郁</p>
+                <a href="https://www.mengfan.tv/m-anime/9A666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+<!--                <a href="https://gxdm01.org/bangumi/888.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>-->
+                <a href="https://bangumi.online/watch/QBVJKvAO-JilRG50z" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="qswnzq.jpg" alt="其实我乃最强?">
+                <p>其实我乃最强?</p>
+                <a href="https://www.mengfan.tv/m-anime/0E666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+<!--                <a href="https://gxdm01.org/bangumi/888.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>-->
+<!--                <a href="https://gxdm01.org/bangumi/887.html" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>-->
+            </div>
+            <div class="content">
+                <img src="wdxfhy.jpg" alt="我的幸福婚约">
+                <p>我的幸福婚约</p>
+                <a href="https://www.mengfan.tv/m-anime/NE666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+                <a href="https://gxdm01.org/bangumi/886.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>
+<!--                <a href="https://gxdm01.org/bangumi/887.html" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>-->
+            </div>
+            <div class="content">
+                <img src="whyq5.jpg" alt="文豪野犬 第五季">
+                <p>文豪野犬 第五季</p>
+                <a href="https://www.mengfan.tv/m-anime/2A666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+<!--                <a href="https://gxdm01.org/bangumi/886.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>-->
+<!--                <a href="https://gxdm01.org/bangumi/887.html" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>-->
+            </div>
+            <div class="content">
+                <img src="wzzs2.jpg" alt="无职转生 第二季">
+                <p>无职转生 第二季</p>
+                <a href="https://www.mengfan.tv/m-anime/rE666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+                <a href="https://gxdm01.org/bangumi/864.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>
+                <a href="https://bangumi.online/watch/obwx7BgALla5wYo_j" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="yzhlk.jpg" alt="勇者赫鲁库">
+                <p>勇者赫鲁库</p>
+                <a href="https://www.mengfan.tv/m-anime/8A666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+<!--                <a href="https://gxdm01.org/bangumi/864.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>-->
+<!--                <a href="https://gxdm01.org/bangumi/887.html" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>-->
+            </div>
+            <div class="content">
+                <img src="zshz2.jpg" alt="咒术回战 第二季">
+                <p>咒术回战 第二季</p>
+                <a href="https://www.mengfan.tv/m-anime/jE666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>
+                <a href="https://gxdm01.org/bangumi/883.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>
+                <a href="https://bangumi.online/watch/OB_5XJbq38skLApM3" target="_blank"><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>
+            </div>
+            <div class="content">
+                <img src="zzqmj.jpg" alt="主宰七魔剑">
+                <p>主宰七魔剑</p>
+<!--                <a href="https://www.mengfan.tv/m-anime/jE666U/" target="_blank"><img src="mfan.ico" width="20px" height="20px" alt="萌番">萌番动漫</a><br>-->
+<!--                <a href="https://gxdm01.org/bangumi/883.html" target="_blank"><img src="gxdm.jpg" width="20px" height="20px" alt="宫下">宫下动漫</a><br>-->
+<!--                <a href=""><img src="favicon.png" width="20px" height="20px" alt="アニメ新番組">アニメ新番組</a>-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
